@@ -1,5 +1,11 @@
 {
   "framework": "hono",
+  "outputDirectory": "src",
+  "functions": {
+    "src/server.mjs": {
+      "includeFiles": "./src/templates/**/*.art"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
