@@ -1,9 +1,12 @@
 {
-  "framework": "hono",
   "rewrites": [
     {
+      "source": "/(css|js|img|favicon.ico)(.*)",
+      "destination": "/$1$2"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/api/index"
+      "destination": "/api/server"
     }
   ]
 }
